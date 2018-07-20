@@ -1,0 +1,25 @@
+{
+  "name": "restfulblog",
+  "version": "1.0.0",
+  "description": "A simple blog app to practice using REST.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smith2106/RESTfulBlog.git"
+  },
+  "author": "Elijah Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smith2106/RESTfulBlog/issues"
+  },
+  "homepage": "https://github.com/Smith2106/RESTfulBlog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.4"
+  }
+}
