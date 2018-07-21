@@ -66,6 +66,18 @@ app.get('/blogs/:id', (req, res) => {
     });
 });
 
+// EDIT ROUTE
+app.get('/blogs/:id/edit', (req, res) => {
+    Blog.findById(req.params.id, (err, blog) => {
+        if (err) {
+            res.redirect('/blogs');
+        }
+        else {
+            res.render('edit', {blog});
+        }
+    });
+});
+
 app.listen(3000, () => {
     console.log('RESTful Blog server is running.');
 });
