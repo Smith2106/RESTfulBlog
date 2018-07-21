@@ -41,6 +41,18 @@ app.get('/blogs/new', (req, res) => {
 });
 
 // CREATE ROUTE
+app.post('/blogs', (req, res) => {
+    // Create blog
+    Blog.create(req.body.blog, (err, newBlog) => {
+        if (err) {
+            res.render('new');
+        }
+        else {
+            // Then, redirect to the index
+            res.redirect('/blogs');
+        }
+    });
+});
 
 app.listen(3000, () => {
     console.log('RESTful Blog server is running.');
