@@ -9,3 +9,8 @@ i.icon {
 #delete {
     display: inline;
 }
+
+.chevron {
+    position: relative;
+    top: 0.35rem;
+}
